@@ -1,0 +1,341 @@
+*{
+  font-family: "Inter", sans-serif;
+}
+.container-md {
+    height: 100vh;
+}
+/* main page styling */
+.main{
+    height: 70vh;
+    width: 100%;
+    margin-bottom: 5px;
+    background-image: url(Images/background2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.collapse {
+    justify-content: end;
+}
+.navbar-nav li {
+    color: yellowgreen;
+}
+.navbar .dropdown-toggle {
+    color: white;
+}
+
+.navbar .dropdown-menu {
+    background-color: #1e1e1e; /* Netflix dark background */
+}
+  
+.navbar .dropdown-item {
+    color: white;
+}
+  
+.navbar .dropdown-item:hover {
+    background-color: #e50914; /* Netflix red */
+    color: white;
+}
+.nav-item1 {
+    border: 2px solid white;
+    margin: 6px;
+    padding: 2px;
+    border-radius: 8px;
+    padding: 0px 4px;
+}
+.nav-item a {
+    color: aliceblue;
+    font-size: medium;
+    font-weight: 600;
+}
+.nav-item2 {
+    background-color: red;
+    border-radius: 8px;
+    color: red;
+    margin: 6px;
+    padding: 2px;
+    padding: 0px 4px;
+}
+/* Heading styling */
+.main-heading {
+    height: 300px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+}
+.main-heading h1 {
+    text-align: center;
+    font-weight: 800;
+    color: white;
+}
+.main-heading p {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+.main-search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+    margin: 0%;
+}
+.navbar-toggler {
+    background-color: white !important;
+}
+.navbar-toggler-icon {
+    color: #fff !important;
+}
+.main-search-sub {
+    width: 500px;
+    border: 2px solid white;
+    height: 40px;
+}
+.main-btn {
+    background-color: #e50914;
+    color: white;
+    font-weight: 400;
+    border:2px solid #e50914;
+    width: 220px;
+    height: 40px;
+}
+.partition {
+    height: 50vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: center; */
+    margin-bottom: 5px;
+}
+
+* Carousel Styling */
+/* .partition_carousel{
+    height: auto;
+    margin-bottom: 1em;
+   
+} */
+.carousel {
+    margin-top: 30px;
+    background-color: #1e1e1e;
+    
+}
+
+.carousel-img {
+    height: 400px;
+    width: 80px;
+  
+ 
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.partition-heading h1 {
+    color: white;
+    font-size: xx-large;
+    font-weight: 900;
+}
+.partition-heading h2 {
+    color: white;
+    font-size: x-large;
+    font-weight: 900;
+}
+.partition-heading p {
+    color: white;
+    font-size: large;
+    font-weight: 400;
+}
+.partition-img img {
+    width: 550px;
+    height: 350px;
+}
+.partition2 {
+    flex-direction: row-reverse;
+}
+.faq {
+    height: auto;
+    margin-bottom: 3px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+.faq h1 {
+    padding: 1em;
+    color: white;
+    font-size: x-large;
+    font-weight: 900;
+}
+.faq p {
+    color: white;    
+}
+/* faq drop down styling */
+.btn-faq {
+    background-color: #434343;
+    height: 50px;
+    width: 60vw;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 1em;
+    align-items: center;
+    font-size: large;
+    font-weight: 200;
+}
+.main-search {
+    margin: 1em;
+}
+
+/* faq answer drop down styling */
+.card {
+    background-color: #434343 !important;
+    color: #fff !important;
+    padding: 0.5em;
+    margin: 0.2rem;
+}
+.card-body1 {
+    width: 60vw;
+    border-radius: 0%;
+}
+
+/* footer styling */
+.footer {
+    height: 30vh;
+    background-color: black;
+    
+}
+
+.col-md-3 {
+    flex-direction: column;
+    justify-content: left;
+    font-size: large;
+    font-weight: 400;
+    margin-left: 5em;
+    margin-top: 2em;
+}
+
+.footer h3 {
+    text-align: center;
+    color: white;
+    font-size: smaller;
+    font-weight: 400;
+    padding: 1em;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: smaller;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 992px){
+    .navbar-brand img{
+        width: 50px;
+        height: 25px;
+    }
+    .main {
+        height: 50vh;
+    }
+    .main-heading h1 {
+        text-align: center;
+        font-weight: 600;
+        color: white;
+        font-size: medium;
+    }
+    .main-heading {
+        width: 100%;
+        padding: 1em;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .main-heading p {
+        text-align: center;
+        color: white;
+        font-weight: 600;
+        font-size: small;
+        margin: 1px;
+    }
+
+    .main-search-sub {
+        margin: 0%;
+        width: 250%;
+        height: 40px;
+    }
+    .main-btn {
+        color: white;
+        font-weight: 400;
+        width: 150%;
+        height: 40px;
+        font-size: x-small;
+    }
+    ::placeholder {
+        font-weight: 400;
+        font-size: small;
+    }
+    .partition {
+        height: 32vh;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .partition-heading h2 {
+        font-size: small;
+        font-weight: 900;
+    }
+    .partition-heading p {
+        color: white;
+        font-size: small;
+        font-weight: 400;
+    }
+    .partition-img img {
+        width: 150px;
+        height: 100px;
+    }
+    .faq h1 {
+        text-align: center;
+        font-size: medium;
+        font-weight: 800;
+    }
+    .btn-faq {
+        height: 50px;
+        width: 300px;
+    }
+    .card-body1 {
+        width: 300px;
+    }
+    .faq p {
+        font-size: small;
+        font-weight: 500;
+        text-align: center;
+    }
+    .main-search2 {
+        padding: 1em;
+    }
+} 

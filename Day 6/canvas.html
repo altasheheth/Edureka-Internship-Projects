@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas </title> 
+</head>
+<body>
+    <!-- CANVAS -->
+    
+    <canvas id="myCanvas" width="300" height="200" style="border: 2px solid black;"></canvas>
+
+    <script>
+        const canvas = document.getElementById("myCanvas")
+        const ctx = canvas.getContext("2d");
+
+        ctx.strokeRect(0,0,300,200);
+    </script><br><br><hr>
+
+    <!-- Triangle inside a square -->
+     <canvas id="canvas2" style="border: 4px solid black;" width="200px" height="200px"></canvas>
+     <script>
+        var canvas2=document.getElementById("canvas2")
+        var ctx2=canvas2.getContext("2d")
+        ctx2.strokeStyle="blue";
+        ctx2.beginPath();
+        ctx2.moveTo(20,20); //start point of triangle
+        ctx2.lineTo(100,20); //Draw line to second point
+        ctx2.lineTo(100,100); //Draw line to third point
+        ctx2.closePath(); //close the path to create the triangle
+        ctx2.stroke(); // Draw the outline of the triangle
+     </script><br><br>
+
+     <!-- SVG -->
+      <svg width="200" height="100" style="border: 2px solid brown;">
+        <circle cx="100" cy="50" r="40" stroke="blue" stroke-width="3" fill="pink"/>
+      </svg>
+
+</body>
+</html>

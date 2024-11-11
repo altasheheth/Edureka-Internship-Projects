@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="Script.js" defer></script> 
+    <!-- Adding "Defer" ensures that script loads after HTML -->
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Search Box with Location Input and search button -->
+        <div class="search-box">
+            <i class='bx bxs-map'></i>
+            <input type="text" placeholder="Search Location">
+            <button class="bx bx-search"></button>
+        </div>
+
+        <!-- main weather display section -->
+        <div class="weather-box">
+            <div class="box">
+                <div class="info-weather">
+                    <div class="weather">
+                        <img src="Images/cloud.png">
+                        <p class="temperature">0<span>°C</span></p>
+                        <p class="description">Broken Clouds</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weather details section (humidity and wind speed) -->
+        <div class="weather-details">
+            <div class="humidity">
+                <i class='bx bx-water'></i>
+                <div class="text">
+                    <div class="info-humidity">
+                        <span>0%</span>
+                    </div>
+                    <p>Humidity</p>
+                </div>
+            </div>
+
+            <div class="wind">
+                <i class='bx bx-wind'></i>
+                <div class="text">
+                    <div class="info-wind">
+                        <span>0Km/h</span>
+                    </div>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Error display if location is not found -->
+        <div class="not-found">
+            <div class="box">
+                <img src="Images/404.png">
+                <p>Location Not found</p>
+            </div>
+        </div>
+    </div>    
+    
+</body>
+</html>

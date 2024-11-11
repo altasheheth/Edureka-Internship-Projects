@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- DOM - Document Objec Model -->
+<p id="mypara">This is Edureke learning</p>
+<button id="mybutton">Click to change the text</button>
+
+<script>
+    const paragraph=document.getElementById("mypara")
+    const button = document.getElementById("mybutton")
+    button.addEventListener("click",()=>{
+        paragraph.textContent="Edureka Learning Platform ! "
+    })
+ </script>
+</body>
+</html>
